@@ -1,0 +1,387 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* color of the body*/
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+main {
+    /* backg-color of main content*/
+    background-color: #f5f5f0;
+    /* max-width of content area*/
+    max-width: 1200px;
+    /* margin/padding to give air to the page and margin to nav/footer elements*/
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* line height for page*/
+    line-height: 1.6;
+    /* letter spacing, to give minimal air between letters*/
+    letter-spacing: .02rem;
+    flex: 1;
+}
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-size: 2rem;
+    color: #297A55;
+}
+
+.navbar img {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin: .5rem 1rem .5rem 2rem;
+}
+
+
+/* navbar styling starts here*/
+
+.navbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-color: black;
+    background-color: white;
+    color: black;
+    width: 100%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    margin-left: 4rem;
+}
+
+.navbar-links .active {
+    color: white;
+    border-radius: 8px;
+    background-color: #1B4332;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem 1rem 2rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: white;
+    border-radius: 8px;
+    background-color: #1B4332;
+    transition: all 0.4s ease-out;
+}
+
+
+/* hamburger button*/
+
+.toggle-button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.3rem;
+    height: 1.7rem;
+}
+
+.toggle-button .bar {
+    height: .24rem;
+    width: 100%;
+    background-color: #297A55;
+    border-radius: 0.625rem;
+}
+
+
+/* end of navbar*/
+
+
+/*containers*/
+
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: .9rem .9rem 4rem .9rem;
+}
+
+.flexbox-item {
+    width: 50%;
+    margin: 20px;
+}
+
+.news-header-container h1 {
+    margin-left: 2.2rem;
+}
+
+
+/* img containers*/
+
+.header-img-container img {
+    width: 100%;
+    margin-bottom: 3rem;
+    box-shadow: .3rem .3rem .5rem rgb(146, 146, 146);
+}
+
+.img-logo-text img {
+    max-height: 8rem;
+    margin-top: 1.5rem;
+}
+
+.img-container img {
+    width: 100%;
+    box-shadow: .3rem .3rem .5rem rgb(146, 146, 146);
+    border-radius: .5rem;
+}
+
+.img-container-gallery img {
+    width: 100%;
+}
+
+
+/* class to hide elements*/
+
+.empty {
+    display: none;
+}
+
+.styled-href a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #297A55;
+}
+
+.styled-href a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+/* readmore "button" ahref*/
+
+.readmore_backBtn a {
+    float: right;
+    text-decoration: none;
+    color: black;
+    padding: .4rem .5rem .4rem .5rem;
+    background-color: #95D5B2;
+    border-radius: 5px;
+}
+
+span {
+    color: #297A55;
+    font-weight: bold;
+}
+
+
+/* styled section*/
+
+.readmore_backBtn a:hover {
+    background-color: #00d354;
+    transition: 0.3s ease-out;
+}
+
+
+/* contact form */
+
+.form {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-color: #1B4332;
+    color: white;
+    padding: 3rem;
+    max-width: 30rem;
+    border-radius: 5px;
+}
+
+.form h1 {
+    color: white;
+}
+
+.form input[type=text],
+[type=email],
+textarea {
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.form input[type=submit] {
+    background-color: #95D5B2;
+    color: rgb(0, 0, 0);
+    padding: 0.7rem 1.2rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form input[type=submit]:hover {
+    background-color: #00d354;
+    transition: 0.3s ease-out;
+}
+
+
+/* footer-content styling*/
+
+.footer {
+    width: 100%;
+    min-height: 20vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: #1B4332;
+}
+
+
+/* headings of the footer, titles*/
+
+.footer-heading {
+    display: flex;
+    margin-right: 4rem;
+    flex-direction: column;
+}
+
+.footer-heading h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.footer-email-form h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+
+/* links in footer, styling*/
+
+.footer-heading a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: .5rem;
+}
+
+
+/* hoover effect for footer a links*/
+
+.footer-heading a:hover {
+    border-bottom: solid white 1px;
+    transition: 0.3s ease-out;
+}
+
+
+/* styling for the text-input field sign up*/
+
+#footer-email {
+    width: 13rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    outline: none;
+    border: none;
+    padding-left: .5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* placeholder color of the input field*/
+
+#footer-email::placeholder {
+    color: #b1b1b1;
+}
+
+
+/* btn for signing up, footer*/
+
+#footer-email-btn {
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 0.4rem;
+    background-color: #95D5B2;
+    outline: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+
+/* hoover effect of sign up btn*/
+
+#footer-email-btn:hover {
+    background-color: #00d354;
+    transition: all 0.4s ease-out;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* breaking point, styles below goes to action when screen is 910px or lower*/
+
+@media only screen and (max-width: 767px) {
+    /* Navbar styling, show toggle button (hamburger nav)*/
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+    }
+    /* shift navbar to column from row*/
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul {
+        flex-direction: column;
+    }
+    .navbar-links li {
+        text-align: center;
+        margin: 0;
+    }
+    /* set size to navbar text links*/
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .flexbox-container {
+        flex-direction: column;
+    }
+    .flexbox-item {
+        width: 90%;
+        margin-top: 0rem;
+    }
+    .form {
+        margin: 2rem;
+    }
+}
